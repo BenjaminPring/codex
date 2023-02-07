@@ -45,4 +45,15 @@ cd into the root folder
 git init
 git add .
 
+to deploy the server:
+in the browser: render.com
+sign in and click "new+" ad select web services
+copy then enter the public repository of the application and press continue
+root directory: server
+build command: npm
+start command: npm run server
+
+select free
+click on "create web service"
+
 
