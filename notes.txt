@@ -1,0 +1,48 @@
+create a new vite project:
+cd into client.
+npm create vite@latest
+
+!! note the new styles.css attributes
+
+from the assets folder, move the favicon into the public folder. Also, delete the vite.svg
+
+delete the counter.js file
+
+in index.html:
+replace href="/vite.svg" with href="favicon.ico"
+adjust the two lines:
+    <title>Codex AI Tool</title>
+    <link rel="stylesheet" href="style.css"
+
+in the <div id="app">:
+create another div: <div id="chat_container">
+
+!! note that the html markdown is adjusted in the index.html
+
+change the src to script.js (and rename the file from main.js to script.js)
+
+to start the client: npm run dev
+
+in terminal:
+cd into server: npm init -y
+
+install dependencies in the server:
+npm install cors dotenv express nodemon openai
+
+cors (Cross-Origin Resource Sharing)
+
+generate an API key from openai.com/api/
+
+in the package.json in server folder:
+remove the "main": "index.js", line
+add: "type": "module"
+switch "test" to "server": "nodemon server"
+
+to start server: in terminal: npm run server
+
+to deploy:
+cd into the root folder
+git init
+git add .
+
+
