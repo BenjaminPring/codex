@@ -55,5 +55,5 @@ start command: npm run server
 
 select free
 click on "create web service"
-
-
+adding environment variables:
+copy and paste key and variable from .env:
